@@ -22,6 +22,11 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+
+      if (this.platform.is ('android')) {
+        this.statusBar.overlaysWebView (false);
+        this.statusBar.backgroundColorByHexString ('#000000');
+      }
     });
   }
 }

@@ -1,0 +1,34 @@
+.content {
+    --padding-start: 12px !important;
+    --padding-end: 12px !important;
+    --padding-top: 14px !important;
+}
+
+.checkbox-round {
+    margin-top: 0.8px;
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    min-height: 18px;
+    background-color: white;
+    border-radius: 6px;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.note {
+    padding-left: 18px !important;
+}
+
+.textarea {
+    --margin-top: 0px !important;
+    --padding-top: 0px !important;
+}
+
+.input {
+    --padding-top: 0px !important;
+    --padding-bottom: 0px !important;
+}
