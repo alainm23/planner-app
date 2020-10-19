@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
 
 // Services
-import { ModalController } from '@ionic/angular';
-
-// Modals
-import { TaskViewPage } from '../modals/task-view/task-view.page';
+import { ModalController, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -13,24 +10,9 @@ import { TaskViewPage } from '../modals/task-view/task-view.page';
 })
 export class HomePage {
 
-  constructor (public modalController: ModalController) {}
+  constructor (public modalController: ModalController, private navController: NavController) {}
 
-  doRefresh(event) {
-    console.log('Begin async operation');
-
-    setTimeout(() => {
-      console.log('Async operation has ended');
-      event.target.complete();
-    }, 2000);
-  }
-
-  async open_task (entry: any) {
-    console.log (entry);
-    const modal = await this.modalController.create({
-      component: TaskViewPage,
-      cssClass: 'taskview-modal'
-    });
-
-    return await modal.present();
+  go_project () {
+    this.navController.navigateForward (['project']);
   }
 }

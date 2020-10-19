@@ -1,3 +1,29 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start" type="overlay" menuId="menu" contentId="menu">
+    <ion-content>
+      <ion-list lines="none">
+        <ion-item menuClose color="item-selected" class="action-item">
+          <ion-icon class="inbox-icon" src="/assets/icons/inbox-symbolic.svg"></ion-icon>
+          &nbsp;
+          Inbox
+          <span class="badge" slot="end">15</span>
+        </ion-item>
+
+        <ion-item menuClose class="action-item">
+          <ion-icon class="today-icon" name="star"></ion-icon>
+          &nbsp;
+          Today
+          <span class="badge" slot="end">3</span>
+        </ion-item>
+
+        <ion-item menuClose class="action-item">
+          <ion-icon class="upcoming-icon" src="/assets/icons/calendar-symbolic.svg"></ion-icon>
+          &nbsp;
+          Upcoming
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="menu"></ion-router-outlet>
 </ion-app>

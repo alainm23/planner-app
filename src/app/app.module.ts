@@ -9,6 +9,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+// SQLITE
+import { SQLite } from '@ionic-native/sqlite/ngx';
+
 // Modals
 import { TaskViewPageModule } from './modals/task-view/task-view.module';
 
@@ -27,6 +30,7 @@ import { TaskViewPageModule } from './modals/task-view/task-view.module';
   ],
   providers: [
     StatusBar,
+    SQLite,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],

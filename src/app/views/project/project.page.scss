@@ -1,0 +1,40 @@
+.inbox-icon {
+    background: #3689e6;
+    border-radius: 6px;
+    color: #fff;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.toolbar-icon {
+    font-size: 24px !important;
+}
+
+.toolbar-title {
+    
+}
+
+.task-list {
+    padding-right: 24px;
+    padding-left: 19px;
+}
+
+.checkbox-round {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    min-height: 18px;
+    background-color: white;
+    border-radius: 6px;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.task-row {
+    display: flex;
+    margin-bottom: 12px;
+    color: #333333;
+}
